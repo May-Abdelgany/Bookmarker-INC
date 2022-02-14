@@ -1,0 +1,18 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 80%;
+}
+
+#errorInput1, #errorInput2 {
+    width: 80%;
+    margin: auto;
+}
+
+.update:hover {
+    color: white;
+}

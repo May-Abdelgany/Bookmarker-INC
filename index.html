@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <title>bookmarker</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <h1 class="text-muted pb-3">Bookmarker</h1>
+        <hr />
+    </div>
+    <div class="container px-5 text-center">
+        <div class="p-5" style="background-color:rgb(238, 238, 238);">
+            <h3>Bookmark your favorite sites</h3>
+            <div class="form-group">
+                <label class="mb-3 mt-4">Site Name</label>
+                <input type="text" class="form-control px-2 m-auto" placeholder="Bookmark Name" id="siteNameId">
+                <div class="alert alert-danger d-none" role="alert" id="errorInput1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="mb-3 mt-4">Site URL</label>
+                <input type="text" class="form-control px-2 m-auto" placeholder="Website URL" id="siteUrlId">
+                <div class="alert alert-danger d-none" role="alert" id="errorInput2">
+                </div>
+                <button id="btnSubmit" type="submit" class="btn btn-primary mt-5" onclick="addSite()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="container my-3 px-5">
+        <input class="form-control m-auto w-100 py-2 px-3" placeholder="search by bookmark name" onkeyup="search(this.value)">
+    </div>
+    <div class="container my-3 px-5" id="display">
+
+
+    </div>
+    <div class="container my-2">
+        <hr />
+        <span class="text-muted">© 2019 Bookmarker Inc.</span>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+
+</body>
+
+</html>
